@@ -304,15 +304,36 @@ nav a:hover{
 
 </div>
 
-    </section>
+    </section class="fade">
     
 
 </footer>
 
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+
+    observer.observe(el);
+
+});
+
 </script> 
 
 <p>📧 treviagestion@gmail.com</p>
-
 
 <p>© 2026 Trevia Gestión</p>
 
